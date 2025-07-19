@@ -20,5 +20,3 @@ match Priority:
             print(f'{task} is a low priority task.Consider completing it when you have free time.')
     case _:
         print(f'{task} is an invalid input')
-
-    
