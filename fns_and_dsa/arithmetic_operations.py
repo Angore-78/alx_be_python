@@ -1,15 +1,14 @@
-def  perform_operation (num1, num2, operation):
+def perform_operation(num1, num2, operation):
     if operation == 'add' :  
         result = float(num1) + float(num2)
     elif operation == 'subtract' : 
         result = float(num1) - float(num2)
     elif operation == 'multiply' :
         result = float(num1) * float(num2)
-    elif operation ==' divide': 
+    elif operation == 'divide': 
         result = float(num1) / float(num2)
     elif operation == 'divide' and num2 == 0:
         result = "Sorry, but you can't divide by zero"
-
 
     return result
 
