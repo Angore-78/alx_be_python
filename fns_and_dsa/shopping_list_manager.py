@@ -9,7 +9,7 @@ def main():
     shopping_list = []
     while True :
         display_menu()
-        choice = input("Enter your choice: ")
+        choice = input("Enter the item to add:")
         if choice == '1':
             item = input('Which item are you adding? -> ')
             shopping = shopping_list.append(item) 
@@ -28,6 +28,8 @@ def main():
         elif choice == '4':
             print("Goodbye!")
             break
+        else:
+            print("Invalid choice. Please try again.")
               
                
 
