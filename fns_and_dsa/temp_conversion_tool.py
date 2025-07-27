@@ -26,7 +26,7 @@ def main():
             converted_temperature=convert_to_celsius(temperature)
             print(f'{temperature} is {converted_temperature}')
      else:
-            print('Invalid value for unit.')
+            print("Invalid temperature. Please enter a numeric value.")
 
 
 if __name__ == "__main__":
