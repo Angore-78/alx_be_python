@@ -6,7 +6,7 @@ class BankAccount:
           bank_statement=f'Deposited :${self.account_balance+amount}.'
           return bank_statement
      def withdraw(self,amount):
-          if amount >self.account_balance:
+          if amount >= self.account_balance:
               print(' Insufficient funds.')
           else:
             bank_statement=f'Withdrew :${self.account_balance-amount}.'
