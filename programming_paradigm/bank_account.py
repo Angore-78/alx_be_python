@@ -1,15 +1,18 @@
 class BankAccount:
-	def __init__(self,account_balance):
-		self.account_balance=account_balance
-		self.initial_balance=0
-	def deposit(self,amount):
-		bank_statement=f'Deposited :${self.account_balance+amount}.'
-		return bank_statement
-	def withdraw(self,amount):
-		bank_statement=f'Withdrew :${self.account_balance-amount}.'
-		return bank_statement
-    def display_balance(self):
-        return self.account_balance
+     def __init__(self, account_balance):
+          self.account_balance = account_balance
+          self.initial_balance = 0
+     def deposit(self,amount):
+          bank_statement=f'Deposited :${self.account_balance+amount}.'
+          return bank_statement
+     def withdraw(self,amount):
+          bank_statement=f'Withdrew :${self.account_balance-amount}.'
+          return bank_statement
+     def display_balance(self):
+          balance = f'Current Balance: ${self.account_balance}'
+          return balance
+          
+
 		
 
 import sys
