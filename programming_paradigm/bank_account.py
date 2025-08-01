@@ -8,6 +8,8 @@ class BankAccount:
 	def withdraw(self,amount):
 		bank_statement=f'Withdrew :${self.account_balance-amount}.'
 		return bank_statement
+    def display_balance(self):
+        return self.account_balance
 		
 
 import sys
