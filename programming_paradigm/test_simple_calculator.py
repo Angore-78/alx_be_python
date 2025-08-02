@@ -13,6 +13,20 @@ class TestSimpleCalculator(unittest.TestCase):
         """Test the addition method."""
         self.assertEqual(self.calc.add(2, 3), 5)
         self.assertEqual(self.calc.add(-1, 1), 0)
+    def test_subtraction(self):
+        self.assertEqual(self.calc.subtract(10,4),6)
+    def test_multiplication(self):
+        self.assertEqual(self.calc.multiply(1,13),13)
+
+    def test_division(self):
+        self.assertEqual(self.calc.divide(100,10),10)
+        self.assertEqual(self.calc.divide(1,0),None)
+
+
+if __name__ == '__main__':
+    unittest.main()
+
+
         
     
     
