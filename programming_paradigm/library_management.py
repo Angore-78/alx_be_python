@@ -9,8 +9,8 @@ class Library(Book):
     def __init__(self,title,author):
         super.__init__(author,title)
     def __init__(self):
-        self._book= Book
-        return self._book
+        self.book= Book
+        return self.book
     def list_available_books(self):
         return self.book
     def add_book(self,title):
@@ -18,8 +18,8 @@ class Library(Book):
         print(f"Appended {self.book.append(Book())}")
     def check_out(self,title):
         return self.book.remove(Book())
-    def return_book(self,title):
-        return _book(self)
+    def return_book(self):
+        return self.book.append(Book)
     
 from library_management import Book, Library
 
