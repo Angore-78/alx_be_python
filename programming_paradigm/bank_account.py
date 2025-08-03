@@ -13,7 +13,7 @@ class BankAccount:
             bank_statement='Insufficient funds.'
             return bank_statement
      def display_balance(self):
-          print(f'Current Balance: ${self.account_balance}')
+          print(f'Current Balance: ${self.account_balance:.2f}')
           
           
           
