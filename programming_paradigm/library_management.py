@@ -1,15 +1,13 @@
 class Book:
-    def __init__(self,title,auther,):
+    def __init__(self,title,author,):
         self.title = title
-        self.auther = auther
+        self.author = author
         self._is_checked_out = True
 
 
 class Library:
     def __init__(self,title,auther):
         super.__init__(auther,title)
-        def __init__(self):
-            self.auther=auther
         self.book=[]
         self.book.append(Book())
         return self.book
