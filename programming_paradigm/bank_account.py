@@ -6,11 +6,11 @@ class BankAccount:
           bank_statement=f'Deposited: ${self.account_balance+amount}.'
           return bank_statement
      def withdraw(self,amount):
-          if amount >= self.account_balance:
-              message = 'Insufficient funds.'
+          if amount < self.account_balance:
+              message = f'Withdrew: ${self.account_balance-amount}.'
               return message
           elif amount < self.account_balance:
-            bank_statement=f'Withdrew: ${self.account_balance-amount}.'
+            bank_statement='Insufficient funds.'
             return bank_statement
      def display_balance(self):
           balance = f'Current Balance: ${self.account_balance}'
