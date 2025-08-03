@@ -1,12 +1,13 @@
 def safe_divide(numerator, denominator):
     try :
         quotient = f"The result of the division is {float(numerator) / float(denominator)}"
-        return quotient
+        return quotient 
     except ZeroDivisionError:
-        print("Error: Cannot divide by zero.")
+        message = "Error: Cannot divide by zero."
+        return message
     except ValueError:
-        print('Error: Please enter numeric values only.')
-    
+        message = 'Error: Please enter numeric values only.'
+        return message
 
 
 import sys
