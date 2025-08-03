@@ -8,6 +8,8 @@ class Book:
 class Library:
     def __init__(self,title,auther):
         super.__init__(auther,title)
+        def __init__(self):
+            self.auther=auther
         self.book=[]
         self.book.append(Book())
         return self.book
