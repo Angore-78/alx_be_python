@@ -10,14 +10,16 @@ class Library(Book):
         super.__init__(author,title)
     def __init__(self):
         self._book=[]
-        return self._book
     def add_book(self,title):
-        return self._book.append(Book())
+        self._book.append(Book)
+        return self._book
         print(f"Appended {self._book.append(Book())}")
-    def check_out(self,title):
-        return self._book.remove(Book())
-    def return_book(self):
-        return self._book.append(Book)
+    def check_out_book(self,title):
+        self._book.remove(Book)
+        return self._book
+    def return_book(self,title):
+        self._book.append(Book)
+        return self._book
     def list_available_books(self):
         return self._book
 
