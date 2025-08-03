@@ -5,9 +5,9 @@ class Book:
         self._is_checked_out = True
 
 
-class Library:
-    def __init__(self,title,auther):
-        super.__init__(auther,title)
+class Library(Book):
+    def __init__(self,title,author):
+        super.__init__(author,title)
         self.book=[]
         self.book.append(Book())
         return self.book
