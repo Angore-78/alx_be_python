@@ -2,7 +2,7 @@ class Book:
     def __init__(self,title,author):
         self.author=author
         self.title=title
-        print(f'{self.title} by {self.author}')             
+        print(f'Book: {self.title} by {self.author}')             
  
         
 class EBook(Book):
@@ -10,7 +10,7 @@ class EBook(Book):
         super().__init__(title,author)
         self.file_size=float(file_size)
     def __str__(self):
-        message = f'{self.title.title()} by {self.author.title()} File Size{self.file_size}'
+        message = f'EBook: {self.title.title()} by {self.author.title()}, File Size: {self.file_size}'
         return message
         
                               
@@ -20,7 +20,7 @@ class PrintBook(Book):
         super().__init__(title,author)      
         self.page_count=int(page_count)
     def __str__(self):
-        message = f"{self.title.title()} by {self.author.title()} Page Count{self.page_count}"    
+        message = f"PrintBook {self.title.title()} by {self.author.title()}, Page Count: {self.page_count}"    
         return message
     
                                                                             
