@@ -2,6 +2,7 @@ class Book:
     def __init__(self,title,author):
         self.author=author
         self.title=title
+    def __repr__(self):
         print(f'Book: {self.title} by {self.author}')             
  
         
