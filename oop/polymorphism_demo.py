@@ -2,6 +2,15 @@ import math
 class Shape:
     def area(self):
          pass
+    
+class Circle(Shape):
+        def __init__(self,radius):
+            super().__init__()
+            self.radius=radius
+        def area(self):
+            return math.pi*self.radius**2
+        
+        
 class Rectangle(Shape):
     def __init__(self,length,width):
         super().__init__()
@@ -11,13 +20,7 @@ class Rectangle(Shape):
         return float(self.length*self.width)
 
    
-class Circle(Shape):
-        def __init__(self,radius):
-            super().__init__()
-            self.radius=radius
-        def area(self):
-            area=math.pi*self.radius**2
-            return area
+
             
             
 def main():
