@@ -1,8 +1,8 @@
 class Book:
-    def __init__(self,title,author,publication_year):
+    def __init__(self,title,author,year):
         self.author=author
         self.title=title
-        self.publication_year=publication_year
+        self.publication_year=year
     def __str__(self):
          message=f"{self.title} by {self.author} published in {self.publication_year}"
          return message
