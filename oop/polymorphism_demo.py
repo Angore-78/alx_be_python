@@ -21,8 +21,9 @@ class Rectangle(Shape):
 
    
 
-            
-            
+from polymorphism_demo import Shape, Rectangle, Circle
+import math
+
 def main():
     shapes = [
         Rectangle(10, 5),
