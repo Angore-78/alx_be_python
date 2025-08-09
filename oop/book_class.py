@@ -2,13 +2,13 @@ class Book:
     def __init__(self,title,author,year):
         self.author=author
         self.title=title
-        self.publication_year=year
+        self.year=year
     def __str__(self):
-         message=f"{self.title} by {self.author} published in {self.publication_year}"
+         message=f"{self.title} by {self.author}, published in {self.year}"
          return message
          
     def __repr__(self):
-         message=f"Deleting {self.title} {self.publication_year}{self.author}"          
+         message=f"Deleting {self.title} {self.year}{self.author}"          
          return message  
                  
  
