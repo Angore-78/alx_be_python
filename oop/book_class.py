@@ -13,8 +13,8 @@ class Book:
                  
  
     def __del__(self):
-        message=f"Deleting {self.title} {self.year}{self.author}"
-        return message
+        print(f"Deleting {self.title} {self.year}{self.author}")
+        
 
 
 from book_class import Book
