@@ -16,11 +16,11 @@ class EBook(Book):
                               
                                                     
 class PrintBook(Book):
-    def __init__(self,title,author,page_number):    
+    def __init__(self,title,author,page_count):    
         super().__init__(title,author)      
-        self.page_number=int(page_number)
+        self.page_count=int(page_count)
     def __str__(self):
-        message = f"{self.title.title()} by {self.author.title()} Page Count{self.page_number}"    
+        message = f"{self.title.title()} by {self.author.title()} Page Count{self.page_count}"    
         return message
     
                                                                             
