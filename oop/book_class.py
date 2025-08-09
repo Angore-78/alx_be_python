@@ -8,12 +8,12 @@ class Book:
          return message
          
     def __repr__(self):
-         message=f"Deleting {self.title} {self.year}{self.author}"          
-         return message  
+         message=f"Book('{self.title}', '{self.author}', {self.year})"          
+         return message 
                  
  
     def __del__(self):
-        message=f"Deleting {self.title}"
+        message=f"Deleting {self.title} {self.year}{self.author}"
         return message
 
 
