@@ -10,7 +10,7 @@ class EBook(Book):
         super().__init__(title,author)
         self.file_size=float(file_size)
     def __str__(self):
-        message = f'{self.title.title()} by {self.author.title()} File Size{file_size}'
+        message = f'{self.title.title()} by {self.author.title()} File Size{self.file_size}'
         return message
         
                               
@@ -20,7 +20,7 @@ class PrintBook(Book):
         super().__init__(title,author)      
         self.page_number=int(page_number)
     def __str__(self):
-        message = f"{self.title.title()} by {self.author.title()} Page Count{page_number}"    
+        message = f"{self.title.title()} by {self.author.title()} Page Count{self.page_number}"    
         return message
     
                                                                             
@@ -34,7 +34,7 @@ class Library:
         return self.book
 
 
-from library_system import Book, EBook, PrintBook, Library
+
 
 def main():
     # Create a Library instance
